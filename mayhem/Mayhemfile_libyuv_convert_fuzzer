@@ -1,0 +1,8 @@
+project: libyuv
+target: libyuv_convert_fuzzer
+cmds:
+  - cmd: /mayhem/libyuv_convert_fuzzer
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/libyuv_convert_fuzzer/testsuite
